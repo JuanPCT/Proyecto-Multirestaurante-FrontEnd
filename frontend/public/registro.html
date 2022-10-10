@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -19,7 +20,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <title>Login</title>
+    <title>Registro</title>
     <style>
         body {
             background: #ffe259;
@@ -28,8 +29,10 @@
 
         .bg {
 
-            background-image: url(img/restaurant1.jpg);
+            background-image: url(img/registro1.jpg);
             background-position: center center;
+            background-size: 120%;
+            
         }
     </style>
 </head>
@@ -60,41 +63,50 @@
 </header>
 
 <body>
-    <div class="container w-75 bg-primary mt-3 rounded shadow">
-        <div class="row align-items-sm-stretch">
-            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+    <div class="container w-75 bg-primary mt-2 rounded shadow">
+        <div class="row align-items-sm-stretch align-items-lg-stretch">
+            <div class="col bg d-none d-xl-block d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
 
             </div>
             <div class="col bg-white  rounded-end">
                 <div class="text-center">
                     <img src="img/LogoR.svg" width="24%">
                 </div>
-                <h2 class="fw-bold text-center py-0">Bienvenido</h2>
+                <h2 class="fw-bold text-center py-0">¡Regístrate!</h2>
                 <form action="">
+                    <div class="mb-4">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" name="apellido" placeholder="Apellido" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="numero" class="form-label">Número Celular</label>
+                        <input type="tel" class="form-control" name="numero" placeholder="Número celular" required>
+                    </div>
                     <div class="mb-4">
                         <label for="email" class="form-label">Correo Electronico</label>
                         <input type="email" class="form-control" name="email" placeholder="Correo" required>
                     </div>
                     <div class="mb-4">
-                        <label for="password" class="form-label">Password</label>
+                        <label for="password" class="form-label">Contraseña</label>
                         <input type="password" class="form-control" name="password" placeholder="Contraseña" required>
                     </div>
-                    <div class="mb-4 form-check">
-                        <input type="checkbox" name="connected" class="form-check-input">
-                        <label for="connected" class="form-check-label">Mantenerme Conectado</label>
-                    </div>
+                    
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
                     </div>
                     <div class="my-3">
-                        <span>¿No tienes cuenta? <a href="registro.html">Regístrate</a></span>
-                        <span>ó <a href="#">Recuperar Contraseña</a></span>
+                        <span>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></span>
+                        
                     </div>
                 </form>
                 <!-- Login con redes sociales-->
                 <div class="container w-100 my-5">
                     <div class="row text-center">
-                        <div class="col-12">Iniciar sesión</div>
+                        <div class="col-12">Regístrate con</div>
                     </div>
                     <div class="row">
                         <div class="col">
