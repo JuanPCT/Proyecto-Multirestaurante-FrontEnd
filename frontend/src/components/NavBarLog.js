@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 
-export default class NavBar extends Component {
+export default class NavBarLog extends Component {
     render() {
         return (
             <div>
-                <nav className="navbar navbar-dark navbar-expand-lg" style={{backgroundColor: "#192537"}}>
+                <nav className="navbar navbar-dark navbar-expand-lg" style={{ backgroundColor: "#192537" }}>
                     <div className='container'>
-                        <Link className="navbar-brand p-2" to="/"><img src="/img/logo-restaurante.jpeg" alt="50px" style={{height: "80px"}}/></Link>
+                        <Link className="navbar-brand p-2" to="/"><img src="/img/logo-restaurante.jpeg" alt="50px" style={{ height: "50px" }} /></Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="/navbarText"
                             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>

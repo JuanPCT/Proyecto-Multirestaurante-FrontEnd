@@ -6,6 +6,7 @@ import Registro from './components/Registro';
 import Principal from './components/Principal';
 import NavBar from './components/NavBar';
 
+
 function App() {
   return (
     <Router>
