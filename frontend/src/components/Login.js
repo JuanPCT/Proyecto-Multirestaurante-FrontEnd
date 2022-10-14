@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import NavBarLog from './NavBarLog';
+import NavBar from './NavBar';
 
 export default class Login extends Component {
   render() {
     return (
       <div>
-        <NavBarLog/>
+        <NavBar/>
         <div className="container w-75 bg-primary mt-3 rounded shadow">
           <div className="row align-items-sm-stretch">
             <div className="col d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded"
@@ -33,7 +33,7 @@ export default class Login extends Component {
                   <button type="submit" className="btn btn-primary">Iniciar sesión</button>
                 </div>
                 <div className="my-3">
-                  <span>¿No tienes cuenta? <Link to="registro.html">Regístrate</Link></span>
+                  <span>¿No tienes cuenta? <Link to="/Inicio/Registro">Regístrate</Link></span>
                   <span> ó <Link to="#">Recuperar Contraseña</Link></span>
                 </div>
               </form>

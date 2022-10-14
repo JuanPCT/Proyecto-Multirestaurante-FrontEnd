@@ -4,18 +4,16 @@ import Inicio from './components/Inicio';
 import Login from './components/Login';
 import Registro from './components/Registro';
 import Principal from './components/Principal';
-import NavBar from './components/NavBar';
 
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<NavBar />} />
+      <Route path="/" element={<Principal />} />
         <Route path="/Inicio" element={<Inicio />} />
-          <Route path="/Inicio/Login" element={<Login />}/>
-          <Route path="/Inicio/Registro" element={<Registro />}/>
-        <Route path="/Principal" element={<Principal />} />
+        <Route path="/Inicio/Login" element={<Login />}/>
+        <Route path="/Inicio/Registro" element={<Registro />}/>        
       </Routes>
     </Router>
   );
