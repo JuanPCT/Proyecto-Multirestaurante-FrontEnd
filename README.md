@@ -35,6 +35,10 @@ carrito de compras.
 ## Enlaces Relevantes
 Despliegue:
 [https://tiny-squirrel-50cdb0.netlify.app/](https://tiny-squirrel-50cdb0.netlify.app/ "https://tiny-squirrel-50cdb0.netlify.app/")
+
+Prototipo:
+[https://www.figma.com/proto/yE04fogGYW4V0loVmJ2uw1/Prototipo?node-id=0%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=22%3A6](https://www.figma.com/proto/yE04fogGYW4V0loVmJ2uw1/Prototipo?node-id=0%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=22%3A6 "https://www.figma.com/proto/yE04fogGYW4V0loVmJ2uw1/Prototipo?node-id=0%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=22%3A6")
+
 Contacto:
 juanpablocota@ufps.edu.co
 =======
