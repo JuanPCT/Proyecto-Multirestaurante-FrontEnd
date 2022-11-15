@@ -6,7 +6,8 @@ import Registro from './components/Registro';
 import Principal from './components/Principal';
 
 
-function App() {
+const App = () => {
+
   return (
     <Router>
       <Routes>
