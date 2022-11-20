@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import NavBar from './NavBar';
+import NavBar from '../components/NavBar';
 
 export default class Login extends Component {
   render() {
