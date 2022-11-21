@@ -7,8 +7,16 @@ const Principal = () => {
   const [categoria, setCategoria] = useState("");
   const [restaurante, setRestaurante] = useState("");
 
-  const callRestaurante = (string) => {
+  const callRestaurante = () => {
     fetch(`http://localhost:8080/restaurantes/all`)
+      .then((res) => res.json())
+      .then((data) => {
+        setRestaurante(data);
+        console.log(data);
+      });
+  };
+  const callCategoria = () => {
+    fetch(`http://localhost:8080/categorias/all`)
       .then((res) => res.json())
       .then((data) => {
         setRestaurante(data);
@@ -26,6 +34,7 @@ const Principal = () => {
           <h1>Categorias</h1>
         </div>
         <div className="row mx-0 p-0" style={{ backgroundColor: "#D9D9D9" }}>
+          {/* Categorias */}
           <div className="col-2">
             <div className="card w-100" style={{ width: "18rem" }}>
               <img
@@ -38,6 +47,7 @@ const Principal = () => {
               </div>
             </div>
           </div>
+          {/* fin */}
         </div>
         <div className="row my-3 mx-0" style={{ backgroundColor: "#D9D9D9" }}>
           <div className="col-2">
