@@ -6,6 +6,7 @@ import Registro from './pages/Registro';
 import Principal from './pages/Principal';
 
 
+
 const App = () => {
 
   return (
