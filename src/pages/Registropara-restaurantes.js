@@ -1,141 +1,69 @@
-import React from 'react'
-
-import { Helmet } from 'react-helmet'
-
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import NavBar from '../components/NavBar';
 import './registropara-restaurantes.css'
 
-const RegistroparaRestaurantes = (props) => {
-  return (
-    <div className="registropara-restaurantes-container">
-      <Helmet>
-        <title>exported project</title>
-      </Helmet>
-      <div className="registropara-restaurantes-registropara-restaurantes">
-        <img
-          alt="Rectangle568016"
-          src="/playground_assets/rectangle568016-i4kh-200h.png"
-          className="registropara-restaurantes-rectangle56"
-        />
-        <img
-          alt="Captura78016"
-          src="/playground_assets/captura78016-ky0i-200h.png"
-          className="registropara-restaurantes-captura7"
-        />
-        <span className="registropara-restaurantes-text">
-          <span>INGRESAR</span>
-        </span>
-        <img
-          alt="Rectangle578017"
-          src="/playground_assets/rectangle578017-hnqc-800h.png"
-          className="registropara-restaurantes-rectangle57"
-        />
-        <img
-          alt="restaurante111612"
-          src="/playground_assets/restaurante111612-ggak-800h.png"
-          className="registropara-restaurantes-restaurante11"
-        />
-        <span className="registropara-restaurantes-text02">
-          <span>¡ UNETE AHORA !</span>
-        </span>
-        <span className="registropara-restaurantes-text04">
-          <span>
-            Si eres el dueño o la dueña del negocio, por favor crea una cuenta
-            completando la siguiente información.
-          </span>
-        </span>
-        <img
-          alt="Rectangle581615"
-          src="/playground_assets/rectangle581615-8utv-200h.png"
-          className="registropara-restaurantes-rectangle58"
-        />
-        <span className="registropara-restaurantes-text06">
-          <span>¿ En que pais esta ubicado el restaurante?</span>
-        </span>
-        <img
-          alt="labanderarepresentativadecolombia1152x75941617"
-          src="/playground_assets/labanderarepresentativadecolombia1152x75941617-fo8j-200h.png"
-          className="registropara-restaurantes-labanderarepresentativadecolombia1152x7594"
-        />
-        <span className="registropara-restaurantes-text08">
-          <span>Colombia</span>
-        </span>
-        <img
-          alt="Polygon11619"
-          src="/playground_assets/polygon11619-wq.svg"
-          className="registropara-restaurantes-polygon1"
-        />
-        <img
-          alt="Rectangle591611"
-          src="/playground_assets/rectangle591611-pec-200h.png"
-          className="registropara-restaurantes-rectangle59"
-        />
-        <span className="registropara-restaurantes-text10">
-          <span>Nombre(s)</span>
-        </span>
-        <img
-          alt="Rectangle601611"
-          src="/playground_assets/rectangle601611-fcvz-200h.png"
-          className="registropara-restaurantes-rectangle60"
-        />
-        <span className="registropara-restaurantes-text12">
-          <span>Apellidos</span>
-        </span>
-        <img
-          alt="Rectangle611611"
-          src="/playground_assets/rectangle611611-fxm-200h.png"
-          className="registropara-restaurantes-rectangle61"
-        />
-        <img
-          alt="labanderarepresentativadecolombia1152x75951611"
-          src="/playground_assets/labanderarepresentativadecolombia1152x75951611-q2hn-200h.png"
-          className="registropara-restaurantes-labanderarepresentativadecolombia1152x7595"
-        />
-        <span className="registropara-restaurantes-text14">
-          <span>+57</span>
-        </span>
-        <img
-          alt="Polygon21611"
-          src="/playground_assets/polygon21611-rm2h.svg"
-          className="registropara-restaurantes-polygon2"
-        />
-        <img
-          alt="Rectangle621611"
-          src="/playground_assets/rectangle621611-asafr-200h.png"
-          className="registropara-restaurantes-rectangle62"
-        />
-        <span className="registropara-restaurantes-text16">
-          <span>Tu numero de celular</span>
-        </span>
-        <img
-          alt="Rectangle631612"
-          src="/playground_assets/rectangle631612-bhid-200h.png"
-          className="registropara-restaurantes-rectangle63"
-        />
-        <span className="registropara-restaurantes-text18">
-          <span>Correo electronico</span>
-        </span>
-        <img
-          alt="Rectangle641612"
-          src="/playground_assets/rectangle641612-oiy-200h.png"
-          className="registropara-restaurantes-rectangle64"
-        />
-        <span className="registropara-restaurantes-text20">
-          <span>Crear una contraseña</span>
-        </span>
-        <img
-          alt="Rectangle651612"
-          src="/playground_assets/rectangle651612-edvc-200h.png"
-          className="registropara-restaurantes-rectangle65"
-        />
-        <span className="registropara-restaurantes-text22">
-          <span>CONTINUAR</span>
-        </span>
-        <span className="registropara-restaurantes-text24">
-          <span>Admin</span>
-        </span>
+var NewComponent = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        {/* CSS only */}
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossOrigin="anonymous" />
+        <link rel="stylesheet" href="css/estilos.css" />
+        <div className="container w-75 bg-white mt-5 rounded bg-opacity-50">
+          <div className="row">
+            <div className="col">
+              <div className="row">
+                <div className="col bg" />
+              </div>
+            </div>
+            <div className="col">
+              <div className="text-end">
+                <img src="img/ufps.jpeg" width="48px" alt="" />
+              </div>
+              <h2 className="fw-blod text-center py-5">UNETE AHORA</h2>
+              <h6 className="fw-blod text-center">Si eres el dueño o la dueña del negocio, por favor crea una cuenta completando la siguiente información.</h6>
+              <form action="#">
+                <div className="mb-4">
+                  <label htmlFor="pais">Donde se encuentra ubicado tu restaurante</label>
+                  <select name="pais" id="pais">
+                    <option value="colombia">Colombia</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="ecuador">Ecuador</option>
+                  </select>
+                </div>
+                <div className="mb-4">
+                  <label htmlFor="usuario" className="form-label">Usuario</label>
+                  <input type="usuario" className="form-control" name="usuario" required />
+                </div>
+                <div className="mb-4">
+                  <label htmlFor="nombre" className="form-label">Nombre</label>
+                  <input type="nombre" className="form-control" name="nombre" required />
+                </div>
+                <div className="mb-4">
+                  <label htmlFor="email" className="form-label">Email</label>
+                  <input type="email" className="form-control" name="email" required />
+                </div>
+                <div className="mb-4">
+                  <label htmlFor="contraseña" className="form-label">Contraseña</label>
+                  <input type="contraseña" className="form-control" name="contraseña" required />
+                </div>
+                <div className="d-grid">
+                  <button type="button" className="btn btn-primary" onclick="Login()">Registrar</button>
+                </div>
+                <div>
+                  <center><img src="img/pie.png" alt="" height="35px" /></center>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        {/* JavaScript Bundle with Popper */}
       </div>
-    </div>
-  )
-}
-
-export default RegistroparaRestaurantes
+    );
+  }
+});
