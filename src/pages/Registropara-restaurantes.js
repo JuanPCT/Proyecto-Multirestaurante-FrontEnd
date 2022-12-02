@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import './registropara-restaurantes.css'
 
-var NewComponent = React.createClass({
-  render: function() {
+const RegistroRestaurante = () => {
     return (
       <div>
         <meta charSet="utf-8" />
@@ -65,5 +64,6 @@ var NewComponent = React.createClass({
         {/* JavaScript Bundle with Popper */}
       </div>
     );
-  }
-});
+}
+
+export default RegistroRestaurante;
