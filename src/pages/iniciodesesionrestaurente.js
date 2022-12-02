@@ -1,82 +1,61 @@
-import React from 'react'
-
-import { Helmet } from 'react-helmet'
-
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import NavBar from '../components/NavBar';
 import './iniciodesesionrestaurente.css'
 
-const Iniciodesesionrestaurente = (props) => {
-  return (
-    <div className="iniciodesesionrestaurente-container">
-      <Helmet>
-        <title>exported project</title>
-      </Helmet>
-      <div className="iniciodesesionrestaurente-iniciodesesionrestaurente">
-        <img
-          alt="Rectangle661622"
-          src="/playground_assets/rectangle661622-j1x-200h.png"
-          className="iniciodesesionrestaurente-rectangle66"
-        />
-        <img
-          alt="Captura81622"
-          src="/playground_assets/captura81622-mxr-200h.png"
-          className="iniciodesesionrestaurente-captura8"
-        />
-        <img
-          alt="Rectangle671622"
-          src="/playground_assets/rectangle671622-6p9o-800w.png"
-          className="iniciodesesionrestaurente-rectangle67"
-        />
-        <img
-          alt="restaurante121623"
-          src="/playground_assets/restaurante121623-5ws-800w.png"
-          className="iniciodesesionrestaurente-restaurante12"
-        />
-        <span className="iniciodesesionrestaurente-text">
-          <span>ACCEDE A TU CUENTA</span>
-        </span>
-        <img
-          alt="Rectangle681623"
-          src="/playground_assets/rectangle681623-sp8-200h.png"
-          className="iniciodesesionrestaurente-rectangle68"
-        />
-        <span className="iniciodesesionrestaurente-text02">
-          <span>Correo electronico</span>
-        </span>
-        <img
-          alt="Rectangle691623"
-          src="/playground_assets/rectangle691623-10xk-200h.png"
-          className="iniciodesesionrestaurente-rectangle69"
-        />
-        <span className="iniciodesesionrestaurente-text04">
-          <span>Contraseña</span>
-        </span>
-        <span className="iniciodesesionrestaurente-text06">
-          <span>¿ Olvidaste tu contraseña ?</span>
-        </span>
-        <img
-          alt="Rectangle701624"
-          src="/playground_assets/rectangle701624-ut7a-200h.png"
-          className="iniciodesesionrestaurente-rectangle70"
-        />
-        <span className="iniciodesesionrestaurente-text08">
-          <span>CONTINUAR</span>
-        </span>
-        <span className="iniciodesesionrestaurente-text10">
-          <span>
-            Si todavia no haz registrado tu restaurante ,
-            <span
-              dangerouslySetInnerHTML={{
-                __html: ' ',
-              }}
-            />
-          </span>
-        </span>
-        <span className="iniciodesesionrestaurente-text12">
-          <span>¡ por favor registrate aqui !</span>
-        </span>
+var NewComponent = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        {/* CSS only */}
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossOrigin="anonymous" />
+        <div className="container w-75 bg-white mt-5 rounded bg-opacity-50">
+          <div className="row">
+            <div className="col">
+              <div className="row">
+                <div className="col bg" />
+              </div>
+            </div>
+            <div className="col">
+              <div className="text-end">
+                <img src="img/ufps.jpeg" width="48px" alt="" />
+              </div>
+              <h2 className="fw-blod text-center py-5">ACCEDE A TU CUENTA</h2>
+              <form action="#">
+                <div className="mb-4">
+                  <label htmlFor="usuario" className="form-label">Usuario</label>
+                  <input type="usuario" className="form-control" name="usuario" required />
+                </div>
+                <div className="mb-4">
+                  <label htmlFor="contraseña" className="form-label">Contraseña</label>
+                  <input type="contraseña" className="form-control" name="contraseña" required />
+                </div>
+                <div className="mb-4 form-check">
+                  <input type="checkbox" name="conectar" className="form-check-input" />
+                  <label htmlFor="conectar" className="form-check-label">Mantener Conectado</label>
+                </div>
+                <div className="d-grid">
+                  <button type="button" className="btn btn-primary" onclick="Login()">Iniciar Sesión</button>
+                </div>
+                <div>
+                  <span>Si todavia no has registrado tu restaurante</span>
+                </div>
+                <div>
+                  <a href>¡Por favor registrate!</a>
+                </div>
+                <div>
+                  <center><img src="img/pie.png" alt="" height="35px" /></center>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        {/* JavaScript Bundle with Popper */}
       </div>
-    </div>
-  )
-}
-
-export default Iniciodesesionrestaurente
+    );
+  }
+});
