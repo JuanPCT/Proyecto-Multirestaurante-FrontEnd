@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Component } from 'react'
 
-const Inicio = () => {
-
-  return <div>Inicio</div>;
-};
-
-export default Inicio;
+export default class Inicio extends Component {
+  render() {
+    return (
+      <div>Inicio</div>
+    )
+  }
+}

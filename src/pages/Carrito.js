@@ -73,6 +73,7 @@ const Carrito = () => {
                   <button type="submit" className="btn btn-primary">Comprar</button>
                 </div>
             </div>
+            
             </div>
           
   );
