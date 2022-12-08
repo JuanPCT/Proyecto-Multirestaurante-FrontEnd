@@ -1,4 +1,4 @@
-# Multirestaurante
+# Proyecto-Multirestaurante-FrontEnd
 
 Proyecto final que hace parte del curso de Desarrollo Web en la Universidad Francisco de Paula Santander, nuestro proyecto se trata de una página web dinámica en la que los usuarios puedan buscar restaurantes a los que pedir domicilios o hacer reservaciones. Los restaurantes deberan poder crear y modificar sus menús y publicar promociones y un administrador se encargara de moderar a los restaurantes publicados.
 
@@ -38,6 +38,9 @@ Despliegue:
 
 Prototipo:
 [https://www.figma.com/proto/yE04fogGYW4V0loVmJ2uw1/Prototipo?node-id=0%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=22%3A6](https://www.figma.com/proto/yE04fogGYW4V0loVmJ2uw1/Prototipo?node-id=0%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=22%3A6 "https://www.figma.com/proto/yE04fogGYW4V0loVmJ2uw1/Prototipo?node-id=0%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=22%3A6")
+
+Back-end Repository:
+[https://github.com/JuanPCT/Proyecto-Multirestaurante-BackEnd](https://github.com/JuanPCT/Proyecto-Multirestaurante-BackEnd "https://github.com/JuanPCT/Proyecto-Multirestaurante-BackEnd")
 
 Contacto:
 juanpablocota@ufps.edu.co
