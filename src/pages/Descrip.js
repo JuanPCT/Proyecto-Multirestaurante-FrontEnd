@@ -3,28 +3,9 @@ import NavBar from "../components/NavBar";
 import Restaurante from "../components/Restaurante";
 import './pagprincipal.css'
 const Descrip = () => {
+  
   //Javascript code
-  const [categoria, setCategoria] = useState("");
-  const [restaurante, setRestaurante] = useState("");
 
-  const callRestaurante = () => {
-    fetch(`http://localhost:8080/restaurantes/all`)
-      .then((res) => res.json())
-      .then((data) => {
-        setRestaurante(data);
-        console.log(data);
-      });
-  };
-  const callCategoria = () => {
-    fetch(`http://localhost:8080/categorias/all`)
-      .then((res) => res.json())
-      .then((data) => {
-        setRestaurante(data);
-        console.log(data);
-      });
-  };
-
-  useEffect(callRestaurante, []);
   return (
     <div>
       <NavBar />

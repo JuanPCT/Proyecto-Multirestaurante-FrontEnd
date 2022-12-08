@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import NavBar from '../components/NavBar';
 import './iniciodesesionrestaurente.css'
 
 var InicioRestaurante = () =>{
@@ -41,7 +39,7 @@ var InicioRestaurante = () =>{
                   <a href>¡Por favor registrate!</a>
                 </div>
                 <div>
-                  <center><img src="img/pie.png" alt="" height="35px" /></center>
+                  <center><img src="/img/restaurant1" alt="" height="35px" /></center>
                 </div>
               </form>
             </div>
