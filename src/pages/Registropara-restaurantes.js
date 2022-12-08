@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import NavBar from '../components/NavBar';
 import './registropara-restaurantes.css'
 
 const RegistroRestaurante = () => {
@@ -48,7 +46,7 @@ const RegistroRestaurante = () => {
                   <button type="button" className="btn btn-primary" onclick="Login()">Registrar</button>
                 </div>
                 <div>
-                  <center><img src="img/pie.png" alt="" height="35px" /></center>
+                  <center><img src="/img/restaurant1.jpg" alt="" height="35px" /></center>
                 </div>
               </form>
             </div>

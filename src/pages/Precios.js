@@ -1,33 +1,9 @@
-import React, { useEffect, useState } from "react";
-import NavBar from "../components/NavBar";
-import Restaurante from "../components/Restaurante";
-import './pagprincipal.css'
+import React from "react";
+import './pagprincipal.css';
+
 const Precios = () => {
-    //Javascript code
-    const [categoria, setCategoria] = useState("");
-    const [restaurante, setRestaurante] = useState("");
-
-    const callRestaurante = () => {
-        fetch(`http://localhost:8080/restaurantes/all`)
-            .then((res) => res.json())
-            .then((data) => {
-                setRestaurante(data);
-                console.log(data);
-            });
-    };
-    const callCategoria = () => {
-        fetch(`http://localhost:8080/categorias/all`)
-            .then((res) => res.json())
-            .then((data) => {
-                setRestaurante(data);
-                console.log(data);
-            });
-    };
-
-    useEffect(callRestaurante, []);
     return (
         <div>
-            <NavBar />
             <div className="container">
                 <div className="row my-3 p-0 mx-0" style={{ backgroundColor: "#D9D9D9" }}>
                     <div>
