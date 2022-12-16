@@ -1,17 +1,26 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
-import NavBar from "../components/NavBar";
-import Restaurante from "../components/Restaurante";
+import { Navigate, useParams } from "react-router-dom";
+import { RESTAURANTE_DETAILS_ENDPOINT } from "../helpers/endpoints";
 import './pagprincipal.css'
 const Descrip = () => {
-  
-  //Javascript code
+
+  const {id} = useParams();
+  const [rest , setRest] = useState(null);
+
+  useEffect(() => {
+    axios.get(`${RESTAURANTE_DETAILS_ENDPOINT}/${id}`).then(response => {
+        setRest(response.data);            
+    }).catch(e => {
+        Navigate('/');
+    })
+}, [id, Navigate]);
 
   return (
     <div>
-      <NavBar />
       <div className="container">
         <div className="row my-3 p-0 mx-0" style={{ backgroundColor: "#D9D9D9" }}>
-          <h1>Nombre Restaurante</h1>
+          <h1>{rest.nombre}</h1>
         </div>
         <div className="row mx-0 p-0" style={{ backgroundColor: "#D9D9D9" }}>
           {/* Categorias */}

@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./pagprincipal.css";
+
 const Pagprincipal = () => {
 
   return (
@@ -13,7 +14,7 @@ const Pagprincipal = () => {
         </div>
         <div className="row mx-0 p-0" style={{ backgroundColor: "#D9D9D9" }}>
           {/* Categorias */}
-          <div className="col-2">
+          <div className="col-lg-2 col-sm-6">
             <div className="card w-100 h-100" style={{ width: "18rem" }}>
               <img
                 src="/playground_assets/cronicaorigenhamburguesas13693-llv-200h.png"
@@ -25,7 +26,7 @@ const Pagprincipal = () => {
               </div>
             </div>
           </div>
-          <div className="col-2">
+          <div className="col-lg-2 col-sm-6">
             <div className="card w-100 h-100" style={{ width: "18rem" }}>
               <img
                 src="/playground_assets/descarga13695-r5e9-200h.png"
@@ -37,7 +38,7 @@ const Pagprincipal = () => {
               </div>
             </div>
           </div>
-          <div className="col-2">
+          <div className="col-lg-2 col-sm-6">
             <div className="card w-100 h-100" style={{ width: "18rem" }}>
               <img
                 src="/playground_assets/perroscalientescolombianos500x41613697-lgql-200h.png"
@@ -96,17 +97,17 @@ const Pagprincipal = () => {
               <a
                 className="flex-sm-fill text-sm-center nav-link active"
                 aria-current="page"
-                href="#"
+                href="/"
               >
                 Calificación
               </a>
-              <a className="flex-sm-fill text-sm-center nav-link" href="#">
+              <a className="flex-sm-fill text-sm-center nav-link" href="/">
                 Precio
               </a>
-              <a className="flex-sm-fill text-sm-center nav-link" href="#">
+              <a className="flex-sm-fill text-sm-center nav-link" href="/">
                 Promociones
               </a>
-              <a className="flex-sm-fill text-sm-center nav-link" href="#">
+              <a className="flex-sm-fill text-sm-center nav-link" href="/">
                 Relevancia
               </a>
             </nav>
