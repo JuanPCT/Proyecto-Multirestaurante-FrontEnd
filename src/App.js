@@ -14,6 +14,7 @@ import RegistroRestaurante from "./pages/Registropara-restaurantes";
 import checkForToken from "./helpers/checkForToken";
 import PrivateRoute from "./utils/PrivateRoute";
 import Descrip from "./pages/Descrip";
+import Principal from "./pages/Principal"
 
 checkForToken();
 
@@ -24,7 +25,7 @@ const App = () => {
         <Navigation/>
         <Container>
           <Routes>
-            <Route path="/" element={<Pagprincipal />}></Route>
+            <Route path="/" element={<Principal />}></Route>
             <Route path="/register" element={<Registro />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route exact path="/restaurante/:id" element={<Descrip/>}></Route>
