@@ -20,7 +20,6 @@ const checkForToken = () => {
             store.dispatch(logoutUser());
             window.location.href = "/signin";
         }
-
     }
 }
 

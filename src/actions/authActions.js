@@ -5,7 +5,7 @@ import jwtDecode from "jwt-decode";
 import { SET_CURRENT_USER } from "./types";
 
 export const loginUser = (userData) => dispatch => {
-
+    console.log(userData);
     return new Promise((resolve, reject) => {
         axios.post(LOGIN_ENDPOINT, userData, {
             headers: {'Accept': 'application/json', 'Content-type': 'application/json'}
@@ -29,9 +29,9 @@ export const loginUser = (userData) => dispatch => {
 }
 
 export const registerUser = (userData) => dispatch => {
+    console.log(userData);
     return new Promise((resolve, reject) => {
         axios.post(REGISTER_ENDPOINT, userData, {
-            headers: {'Accept': 'application/json', 'Content-type': 'application/json'}
         }).then(response => {
             resolve(response);
         }).catch(error => {

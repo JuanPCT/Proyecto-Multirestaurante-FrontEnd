@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Restaurante from "../components/restaurante/Restaurante";
+import { RESTAURANTES_ENDPOINT } from "../helpers/endpoints";
 
 const Principal = () => {
   //Javascript code
@@ -7,7 +8,7 @@ const Principal = () => {
   const [restaurante, setRestaurante] = useState("");
 
   const callRestaurante = () => {
-    fetch(`http://localhost:8080/restaurantes/all`)
+    fetch(RESTAURANTES_ENDPOINT+`/all`)
       .then((res) => res.json())
       .then((data) => {
         setRestaurante(data);
@@ -24,6 +25,7 @@ const Principal = () => {
   };
 
   useEffect(callRestaurante, []);
+  useEffect(callCategoria, []);
 
   return (
     <div>
@@ -72,15 +74,13 @@ const Principal = () => {
         </div>
       </div>
       <div className="row">
-        <div className="container d-flex flex-wrap">
           {restaurante && restaurante.length > 0 ? (
             restaurante.map((rest, index) => (
               <Restaurante key={index} rest={rest} />
             ))
           ) : (
-            <Restaurante/>
+            "No hay restaurantes"
           )}
-        </div>
       </div>
     </div>
   );
