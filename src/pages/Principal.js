@@ -1,31 +1,43 @@
 import React, { useEffect, useState } from "react";
+import Categoria from "../components/restaurante/Categoria";
 import Restaurante from "../components/restaurante/Restaurante";
-import { RESTAURANTES_ENDPOINT } from "../helpers/endpoints";
+import { CATEGORIAS_ENDPOINT, RESTAURANTES_ENDPOINT } from "../helpers/endpoints";
+import Descrip from "./Descrip";
 
 const Principal = () => {
   //Javascript code
-  const [categoria, setCategoria] = useState("");
+  const [isLoading1, setIsLoading1] = useState(true);
   const [restaurante, setRestaurante] = useState("");
+  const [categoria, setCategoria] = useState("");
 
   const callRestaurante = () => {
-    fetch(RESTAURANTES_ENDPOINT+`/all`)
+    fetch(RESTAURANTES_ENDPOINT + `/all`)
       .then((res) => res.json())
       .then((data) => {
-        setRestaurante(data);
-        console.log(data);
+        setRestaurante(data);        
       });
   };
+
   const callCategoria = () => {
-    fetch(`http://localhost:8080/categorias/all`)
+    fetch(CATEGORIAS_ENDPOINT)
       .then((res) => res.json())
       .then((data) => {
-        setRestaurante(data);
+        setCategoria(data);
         console.log(data);
+        setIsLoading1(false);
       });
   };
 
   useEffect(callRestaurante, []);
   useEffect(callCategoria, []);
+
+  if (isLoading1) {
+    return (
+      <div className="App">
+        <h1>Cargando...</h1>
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -34,18 +46,11 @@ const Principal = () => {
       </div>
       <div className="row mx-0 p-0" style={{ backgroundColor: "#D9D9D9" }}>
         {/* Categorias */}
-        <div className="col-2">
-          <div className="card w-100" style={{ width: "18rem" }}>
-            <img
-              src="https://images.rappi.com/rests_taxonomy/372_b.jpg?e=webp&q=10&d=10x10"
-              className="card-img-top"
-              alt="..."
-            />
-            <div className="card-body">
-              <h6 className="card-title">Hamburguesas</h6>
-            </div>
-          </div>
-        </div>
+        {categoria && categoria.length > 0
+          ? categoria.map((cat, index) => (
+              <Categoria key={index} cat={cat} />
+            ))
+          : "No hay categorias"}
         {/* fin */}
       </div>
       <div className="row my-3 mx-0" style={{ backgroundColor: "#D9D9D9" }}>
@@ -74,13 +79,11 @@ const Principal = () => {
         </div>
       </div>
       <div className="row">
-          {restaurante && restaurante.length > 0 ? (
-            restaurante.map((rest, index) => (
+        {restaurante && restaurante.length > 0
+          ? restaurante.map((rest, index) => (
               <Restaurante key={index} rest={rest} />
             ))
-          ) : (
-            "No hay restaurantes"
-          )}
+          : "No hay restaurantes"}
       </div>
     </div>
   );

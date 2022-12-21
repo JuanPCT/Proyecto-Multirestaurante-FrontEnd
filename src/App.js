@@ -6,7 +6,6 @@ import Login from "./pages/Login";
 import Registro from "./pages/Registro";
 import store from "./store";
 import { Provider } from "react-redux";
-import Pagprincipal from "./pages/pagprincipal";
 import Carrito from "./pages/Carrito";
 import Precios from "./pages/Precios";
 import InicioRestaurantes from "./pages/iniciodesesionrestaurente";
@@ -20,7 +19,7 @@ checkForToken();
 
 const App = () => {
   return (
-    <Provider store={store}>
+    <Provider store={store}> 
       <Router>
         <Navigation/>
         <Container>
