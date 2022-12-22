@@ -12,7 +12,7 @@ import InicioRestaurantes from "./pages/iniciodesesionrestaurente";
 import RegistroRestaurante from "./pages/Registropara-restaurantes";
 import checkForToken from "./helpers/checkForToken";
 import PrivateRoute from "./utils/PrivateRoute";
-import Descrip from "./pages/Descrip";
+import Descrip from "./components/restaurante/Descrip";
 import Principal from "./pages/Principal"
 
 checkForToken();

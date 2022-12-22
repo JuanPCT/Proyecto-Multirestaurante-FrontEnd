@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Categoria from "../components/restaurante/Categoria";
 import Restaurante from "../components/restaurante/Restaurante";
 import { CATEGORIAS_ENDPOINT, RESTAURANTES_ENDPOINT } from "../helpers/endpoints";
-import Descrip from "./Descrip";
 
 const Principal = () => {
   //Javascript code
@@ -23,7 +22,6 @@ const Principal = () => {
       .then((res) => res.json())
       .then((data) => {
         setCategoria(data);
-        console.log(data);
         setIsLoading1(false);
       });
   };
@@ -55,27 +53,7 @@ const Principal = () => {
       </div>
       <div className="row my-3 mx-0" style={{ backgroundColor: "#D9D9D9" }}>
         <div className="col-2">
-          <p className="mx-3 fw-bold">Filtrar por:</p>
-        </div>
-        <div className="col-5">
-          <nav className="nav nav-pills flex-column flex-sm-row">
-            <a
-              className="flex-sm-fill text-sm-center nav-link active"
-              aria-current="page"
-              href="#"
-            >
-              Calificación
-            </a>
-            <a className="flex-sm-fill text-sm-center nav-link" href="#">
-              Precio
-            </a>
-            <a className="flex-sm-fill text-sm-center nav-link" href="#">
-              Promociones
-            </a>
-            <a className="flex-sm-fill text-sm-center nav-link" href="#">
-              Relevancia
-            </a>
-          </nav>
+          <h2 className="mx-3 fw-bold">Restaurantes</h2>
         </div>
       </div>
       <div className="row">
