@@ -18,7 +18,7 @@ const checkForToken = () => {
 
         if (decoded.exp < currentTime) {
             store.dispatch(logoutUser());
-            window.location.href = "/signin";
+            window.location.href = "/login";
         }
     }
 }
